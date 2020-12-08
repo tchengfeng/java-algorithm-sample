@@ -26,8 +26,8 @@ public class HeapSort {
         int len = arr.length;
         for (int i = len / 2 - 1 ; i >= 0; i--) { // TODO: i=(len-1)/2 or i = len/2-1
             //从第一个非叶子结点从下至上，从右至左调整结构
-//            buildMaxHeap(arr, i, len);
-            buildMinHeap(arr, i, len);
+            buildMaxHeap(arr, i, len);
+//            buildMinHeap(arr, i, len);
         }
 
         //调整堆结构+交换堆顶元素与末尾元素。TODO：percolate from 0 to the last leaf node.
