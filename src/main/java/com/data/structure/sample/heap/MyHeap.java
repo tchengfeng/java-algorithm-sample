@@ -154,7 +154,7 @@ public class MyHeap {
 
         int len = array.length - 1;
 
-        if(len == array.length - 1){
+        if(len == originalLen){
             array = enlargeArray(array, array.length * 2 + 1 );
         }
 
