@@ -132,6 +132,119 @@ public class Solution {
         return resultB;
     }
 
+    public int[] twoSum(int[] nums, int target) {
+        int len = nums.length;
+        HashMap<Integer, Integer> resultMap= new HashMap<>(len -1);
+        resultMap.put(nums[0],0);
+        for(int i = 1; i < len; i++){
+            int value = target - nums[i];
+            if(resultMap.containsKey(value)){
+                return new int[]{resultMap.get(value), i};
+            }
+            resultMap.put(nums[i],i);
+        }
+        return null;
+    }
+
+
+    public boolean isIsomorphic(String s, String t) {
+        char[] chars = s.toCharArray();
+        char[] chart = t.toCharArray();
+        int[] preIndexOfs = new int[256];
+        int[] preIndexOft = new int[256];
+        for (int i = 0; i < chars.length; i++) {
+            if (preIndexOfs[chars[i]] != preIndexOft[chart[i]]) {
+                return false;
+            }
+            preIndexOfs[chars[i]] = i + 1;
+            preIndexOft[chart[i]] = i + 1;
+        }
+        return true;
+    }
+
+    public String[] findRestaurant(String[] list1, String[] list2) {
+
+        if(list1 == null || list1.length == 0){
+            return list2;
+        }
+
+        if(list2 == null || list2.length == 0){
+            return list1;
+        }
+
+        int minIndex = 60;
+        int iLen = list1.length;
+        int jLen = list2.length;
+
+        ArrayList<String> resultStr = new ArrayList<String>();
+        for(int i = 0; i < iLen; i++){
+            String str = list1[i];
+            for(int j = 0; j < jLen; j++){
+                if(str.equals(list2[j])){
+
+                    if(minIndex > (i + j)){
+                        resultStr.clear();
+                        resultStr.add(str);
+                        minIndex = i + j;
+                    } else if(minIndex == (i + j)){
+                        resultStr.add(str);
+                    }
+
+                }
+            }
+        }
+
+        return resultStr.toArray(new String[0]);
+
+    }
+
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+
+        HashMap<Integer, Integer> tempMap = new HashMap<Integer, Integer>();
+
+        int len = nums.length;
+        for(int i = 0; i < len; i++){
+
+            if(tempMap.containsKey(nums[i])){
+                int index = tempMap.get(nums[i]);
+                int absValue = Math.abs(index - i);
+                if(absValue <= k){
+                    return true;
+                }
+            }
+
+            tempMap.put(nums[i], i);
+        }
+
+        return false;
+    }
+
+    public int characterReplacement(String s, int k) {
+        int len = s.length();
+
+        int maxLen = k + 1;
+
+        int i = 0;
+        int j = i +1;
+
+
+        while(i < len && j < len){
+            if(s.charAt(i) == s.charAt(j)){
+                j++;
+            } else if(k > 0){
+                k--;
+                j++;
+            } else{
+                int newLen = j - i + 1;
+                maxLen = (maxLen > newLen) ? maxLen : newLen;
+                i++;
+                j = i+1;
+            }
+        }
+
+        return maxLen;
+    }
+
     public static void main(String[] args) {
 //        ListNode n1 = new ListNode(1);
 //        ListNode n2 = new ListNode(2);
@@ -156,10 +269,12 @@ public class Solution {
 //        int[] arr2 = {2,2};
 //        new Solution().intersection(arr1,arr2);
 
-        new Solution().isHappy(19);
+//        int[] arr1 = {3,15,2,7};
+//        new Solution().twoSum(arr1,9);
+
+
+        new Solution().characterReplacement("ABAB",2);
 
     }
-
-
 
 }
