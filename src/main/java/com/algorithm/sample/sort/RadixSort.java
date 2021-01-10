@@ -58,9 +58,9 @@ public class RadixSort {
                     count++;
                 }
             }
+
         }
 
-        System.out.println(array);
     }
 
     public static void main(String[] args) {
