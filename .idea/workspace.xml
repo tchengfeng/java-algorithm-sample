@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4a9618d-c894-4909-ae8d-bbd45d86150d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/algorithm/sample/test/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/algorithm/sample/test/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algorithm/sample/test/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/BubbleSort.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +28,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../weifu-esb-sample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -216,7 +216,20 @@
       <workItem from="1607388006719" duration="8954000" />
       <workItem from="1607427891759" duration="5312000" />
       <workItem from="1607474042400" duration="34706000" />
+      <workItem from="1609675402212" duration="332000" />
+      <workItem from="1609843376539" duration="615000" />
+      <workItem from="1609943502387" duration="4351000" />
+      <workItem from="1610028822994" duration="2204000" />
+      <workItem from="1610247534704" duration="3272000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1610249302095</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610249302095</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +247,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -309,11 +326,6 @@
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/BubbleSort.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/leeCode/MaxProfit.java</url>
           <line>44</line>
           <option name="timeStamp" value="56" />
@@ -337,16 +349,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/ShellSort.java</url>
           <line>39</line>
           <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/BubbleSort.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/BubbleSort.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/QuickSort.java</url>
@@ -375,11 +377,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/RadixSort.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/RadixSort.java</url>
           <line>17</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
@@ -394,11 +391,6 @@
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/RadixSort.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/data/structure/sample/queue/SingleLinkCircularQueue.java</url>
           <line>68</line>
           <option name="timeStamp" value="98" />
@@ -407,16 +399,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/data/structure/sample/queue/SingleLinkCircularQueue.java</url>
           <line>2</line>
           <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/BubbleSort.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/sort/BubbleSort.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/col/sample/ArrayListS.java</url>
@@ -755,18 +737,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/test/Solution.java</url>
-          <line>49</line>
+          <line>17</line>
           <option name="timeStamp" value="321" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/test/Solution.java</url>
-          <line>52</line>
+          <line>20</line>
           <option name="timeStamp" value="366" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/test/Solution.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="382" />
+          <line>15</line>
+          <option name="timeStamp" value="383" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/algorithm/sample/test/Solution.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="395" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

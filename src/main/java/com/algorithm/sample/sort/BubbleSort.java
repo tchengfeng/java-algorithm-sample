@@ -25,31 +25,7 @@ public class BubbleSort {
             }
         }
 
-        System.out.println(a);
-
     }
-
-    /**
-     * <end -> start => Max>
-     *
-     * @author XXX
-     */
-    public static void bubbleSort4(int[] arr) {
-
-        int len = arr.length;
-        for(int i = len-1; i > 0; i--){
-            for(int j = i-1; j >=0; j--){
-                if(arr[i] < arr[j]){
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                }
-            }
-        }
-
-        System.out.println(arr);
-    }
-
 
     /**
      * 从数组开始端开始比较相邻两元素，把第i大的冒泡到数组的第N-i个位置。i从0一直到N-1,从而完成排序。
@@ -69,62 +45,12 @@ public class BubbleSort {
             }
         }
 
-        System.out.println(arr);
-
-    }
-
-    /**
-     * <start -> end => Mix>
-     *
-     * @author XXX
-     */
-    public static void bubbleSort3(int[] arr) {
-
-        int len = arr.length;
-        for(int i = 0; i < len -1; i++){
-            for(int j = i+1; j< len; j++){
-                if(arr[i] > arr[j]){
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                }
-            }
-        }
-
-        System.out.println(arr);
-    }
-
-    /**
-     * @author XXX
-     */
-    public static void bubbleSort(int[] arr) {
-
-        int len = arr.length;
-
-        for(int i = 0; i < len-1; i++){
-             int temp;
-            for(int j = 0; j < len - i -1; j++){
-                if(arr[j] > arr[j+1]){
-                    temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
-                }
-            }
-
-        }
-
-        System.out.println(arr);
-
     }
 
     public static void main(String[] args) {
         int[] nums = { 1, 3, 2, 9, 5, 8, 35, 24 };
-//        bubbleSort1(nums);
-//        bubbleSort2(nums);
-//        bubbleSort3(nums);
-        bubbleSort4(nums);
-//        bubbleSort(nums);
-
+        bubbleSort1(nums);
+        bubbleSort2(nums);
     }
 
 }
